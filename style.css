@@ -1,0 +1,302 @@
+@charset "utf-8";
+
+html, body {
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #aaa6a4;
+    font-family: '03SmartFontUI', Verdana, sans-serif;
+}
+
+
+.common-header {
+    margin-top: 50px;
+    padding: 10px;
+    border: 1px solid #2a1919;
+    border-left: 20px solid #2a1919;
+    background-color: #837f7d;
+    color: #eae1dc;
+    text-align: center;
+}
+
+
+/* header */
+
+header {
+    margin-bottom: 50px;
+    padding: 15px;
+    background-color: #2a1919;
+    color: #eae1dc;
+}
+
+.header-text-inner h1 {
+    text-align: center;
+    font-weight: normal;
+}
+
+
+/* main-visual */
+
+.main-visual {
+    width: 100%;
+    text-align: center;
+}
+
+.main-image {
+    position: relative;
+    height: 500px;
+    background-image: url("images/main_visual.png");
+    background-size: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+}
+
+
+.main-text-inner {
+    position: absolute;
+    top: 280px;
+    left: 50%;
+    width: 400px;
+    padding: 16px;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.main-text-inner h1 {
+    font-size: 28px;
+}
+
+.main-text-inner h2 {
+    font-size: 20px;
+}
+
+.main-text h3 {
+    font-size: 24px;
+    font-weight: bold;    
+}
+
+
+/* event */
+
+.event-area-inner {
+    font-size: 18px;
+    line-height: 1.8;
+    text-align: center;
+}
+
+.event-area-inner p span {
+    color: #832967;
+    font-weight: bold;
+}
+
+.event-area-inner p:last-of-type {
+    font-size: 15px;
+}
+
+
+/* schedule */
+
+.schedule-area-inner {
+    font-size: 18px;
+    line-height: 1.8;
+    text-align: center;
+}
+
+.schedule-area-inner ul {
+    list-style-type: none;
+}
+
+.schedule-area-inner li {
+    font-size: 24px;
+}
+
+
+/* coupon */
+
+.coupon-area {
+    font-size: 18px;
+    line-height: 1.8;
+    text-align: center;  
+}
+
+.coupon-area-inner {
+    position: relative;
+}
+
+button {
+    all: unset;
+    width: 300px;
+    height: 200px;
+    border-radius: 20px;
+    background-color: #76415d;
+    color: #c09872;
+    font-size: 20px;
+    box-shadow: 3px 3px 0 #393a18;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+button:active {
+    box-shadow: -3px -3px 0 #393a18;
+}
+
+.coupon-btn::before {
+    position: absolute;
+    top: 237px;
+    left: 50%;
+    padding: 75px 90px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ddd;
+    font-size: 30px;
+    content: "使用済み";
+    transform: translateX(-50%);
+    box-sizing: border-box;
+}
+
+
+/* footer */
+
+footer {
+    margin-top: 50px;
+    padding: 30px;
+    background-color: #2a1919;
+    color: #eae1dc;
+}
+
+footer p {
+    text-align: center;
+}
+
+
+@media(max-width: 768px) {
+
+    /* main-visual */
+
+    .main-image {
+        height: 420px;
+        background-size: 420px;
+    }
+    
+    .main-text-inner {
+        top: 260px;
+        width: 330px;
+    }
+    
+    .main-text-inner h1 {
+        font-size: 24px;
+    }
+    
+    .main-text-inner h2 {
+        font-size: 18px;
+    }
+
+    /* event */
+
+    .event-area-inner {
+        font-size: 16px;
+    }
+
+    .event-area-inner p:last-of-type {
+        font-size: 14px;
+    }
+
+    /* schedule */
+
+    .schedule-area-inner p {
+        font-size: 16px;
+    }
+
+    /* coupon */
+
+    .coupon-area-inner {
+        font-size: 16px;
+    }
+
+    .coupon-btn::before {
+        top: 211px;
+    }
+
+
+}
+
+@media(max-width: 615px) {
+
+    /* coupon */
+
+    .coupon-btn::before {
+        padding: 30px 140px;
+        font-size: 20px;
+    }
+
+}
+
+@media(max-width: 375px) {
+
+    /* main-visual */
+
+    .main-image {
+        height: 350px;
+        background-size: 350px;
+    }
+    
+    .main-text-inner {
+        top: 240px;
+        width: 80%;
+    }
+    
+    .main-text-inner h1 {
+        font-size: 20px;
+    }
+    
+    .main-text-inner h2 {
+        font-size: 15px;
+    }
+    
+    /* event */
+
+    .event-area-inner {
+        font-size: 14px;
+    }
+
+    .event-area-inner p:last-of-type {
+        font-size: 12px;
+    }
+
+    /* schedule */
+
+    .schedule-area-inner p {
+        font-size: 14px;
+    }
+
+    /* coupon */
+
+    .coupon-area-inner {
+        font-size: 14px;
+    }    
+
+    .coupon-btn::before {
+        top: 187px;
+        padding: 43px 142px;
+        font-size: 16px;
+    }
+
+}
+
+@media(max-width: 338px) {
+
+    .coupon-btn::before {
+        top: 210px;
+    }
+
+
+}
+
+
+
