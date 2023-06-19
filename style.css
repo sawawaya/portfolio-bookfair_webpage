@@ -372,7 +372,22 @@ footer p {
         font-size: 12px;
     }
 
-    
+}
+
+@media(max-width: 280px) {
+
+    /* coupon */
+
+    button {
+        width: 180px;
+        height: 120px;
+    }
+
+    .coupon-btn::before {
+        top: 160px;
+        padding: 18px 85px;
+        font-size: 12px;
+    }
 
 }
 
