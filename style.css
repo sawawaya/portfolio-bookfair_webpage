@@ -135,6 +135,7 @@ button {
     height: 200px;
     border-radius: 20px;
     background-color: #76415d;
+    background-image: url(images/img_coupon.jpg);
     color: #c09872;
     font-size: 20px;
     box-shadow: 3px 3px 0 #393a18;
@@ -356,7 +357,8 @@ footer p {
 
     button {
         width: 200px;
-        height: 150px;
+        height: 133px;
+        background-image: url(images/img_coupon375.jpg);
         font-size: 16px;
     }
 
@@ -397,6 +399,10 @@ footer p {
 
     .coupon-btn::before {
         top: 183px;
+    }
+
+    button {
+        background-image: url(images/img_coupon280.jpg);
     }
 
 }
