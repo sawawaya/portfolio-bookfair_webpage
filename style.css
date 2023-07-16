@@ -147,7 +147,7 @@ button:active {
     box-shadow: -3px -3px 0 #393a18;
 }
 
-.coupon-btn::before {
+/* .coupon-btn::before {
     position: absolute;
     top: 237px;
     left: 50%;
@@ -157,6 +157,22 @@ button:active {
     color: #ddd;
     font-size: 30px;
     content: "使用済み";
+    transform: translateX(-50%);
+    box-sizing: border-box;
+} */
+
+.coupon-btn-overlay.show {
+    position: absolute;
+    top: 237px;
+    left: 50%;
+    width: 300px;
+    height: 205px;
+    padding: 75px 90px;
+    border-radius: 20px;
+    background-image: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ddd;
+    font-size: 30px;
     transform: translateX(-50%);
     box-sizing: border-box;
 }
@@ -224,10 +240,13 @@ footer p {
         font-size: 16px;
     }
 
-    .coupon-btn::before {
+    /* .coupon-btn::before {
+        top: 211px;
+    } */
+
+    .coupon-btn-overlay.show {
         top: 211px;
     }
-
 
 }
 
@@ -235,10 +254,10 @@ footer p {
 
     /* coupon */
 
-    .coupon-btn::before {
+    /* .coupon-btn::before {
         padding: 30px 140px;
         font-size: 20px;
-    }
+    } */
 
 }
 
@@ -304,7 +323,11 @@ footer p {
         font-size: 14px;
     }
 
-    .coupon-btn::before {
+    /* .coupon-btn::before {
+        top: 183px;
+    } */
+
+    .coupon-btn-overlay.show {
         top: 183px;
     }
 
@@ -362,11 +385,20 @@ footer p {
         font-size: 16px;
     }
 
-    .coupon-btn::before {
+    /* .coupon-btn::before {
         top: 160px;
         padding: 17px 92px;
         font-size: 16px;
+    } */
+
+    .coupon-btn-overlay.show {
+        top: 160px;
+        width: 200px;
+        height: 133px;
+        padding: 40px 10px;
+        font-size: 26px;
     }
+
 
     /* footer */
 
@@ -381,38 +413,34 @@ footer p {
     /* coupon */
 
     button {
-        width: 180px;
-        height: 120px;
+        width: 200px;
+        height: 130px;
     }
 
-    .coupon-btn::before {
+    /* .coupon-btn::before {
         top: 160px;
         padding: 18px 85px;
         font-size: 12px;
+    } */
+
+    .coupon-btn-overlay.show {
+        top: 159px;
+        width: 200px;
+        height: 133px;
     }
 
 }
 
-@media(max-width: 251px) {
+@media(max-width: 266px) {
 
     /* coupon */
 
-    .coupon-btn::before {
+    /* .coupon-btn::before {
         top: 183px;
-    }
+    } */
 
-    button {
-        background-image: url(images/img_coupon280.jpg);
-    }
-
-}
-
-@media(max-width: 237px) {
-
-    /* coupon */
-
-    .coupon-btn::before {
-        top: 203px;
+    .coupon-btn-overlay.show {
+        top: 181px;
     }
 
 }
