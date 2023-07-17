@@ -8,7 +8,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #aaa6a4;
-    font-family: '03SmartFontUI', Verdana, sans-serif;
+    font-family: 'Klee One', Verdana, sans-serif;
 }
 
 
@@ -161,7 +161,12 @@ button:active {
     box-sizing: border-box;
 } */
 
+.coupon-btn-overlay {
+    display: none;
+}
+
 .coupon-btn-overlay.show {
+    display: block;
     position: absolute;
     top: 237px;
     left: 50%;
