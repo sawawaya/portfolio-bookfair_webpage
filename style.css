@@ -141,25 +141,12 @@ button {
     box-shadow: 3px 3px 0 #393a18;
     box-sizing: border-box;
     cursor: pointer;
+    z-index: 1;
 }
 
 button:active {
     box-shadow: -3px -3px 0 #393a18;
 }
-
-/* .coupon-btn::before {
-    position: absolute;
-    top: 237px;
-    left: 50%;
-    padding: 75px 90px;
-    border-radius: 20px;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #ddd;
-    font-size: 30px;
-    content: "使用済み";
-    transform: translateX(-50%);
-    box-sizing: border-box;
-} */
 
 .coupon-btn-overlay {
     display: none;
@@ -171,15 +158,12 @@ button:active {
     top: 237px;
     left: 50%;
     width: 300px;
-    height: 205px;
-    padding: 75px 90px;
+    height: 203px;
     border-radius: 20px;
-    background-image: none;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #ddd;
-    font-size: 30px;
+    background-image: url(images/img_overlay.jpg);
     transform: translateX(-50%);
     box-sizing: border-box;
+    z-index: 2;
 }
 
 
@@ -245,26 +229,12 @@ footer p {
         font-size: 16px;
     }
 
-    /* .coupon-btn::before {
-        top: 211px;
-    } */
-
     .coupon-btn-overlay.show {
         top: 211px;
     }
 
 }
 
-@media(max-width: 615px) {
-
-    /* coupon */
-
-    /* .coupon-btn::before {
-        padding: 30px 140px;
-        font-size: 20px;
-    } */
-
-}
 
 @media(max-width: 540px) {
 
@@ -328,10 +298,6 @@ footer p {
         font-size: 14px;
     }
 
-    /* .coupon-btn::before {
-        top: 183px;
-    } */
-
     .coupon-btn-overlay.show {
         top: 183px;
     }
@@ -390,18 +356,11 @@ footer p {
         font-size: 16px;
     }
 
-    /* .coupon-btn::before {
-        top: 160px;
-        padding: 17px 92px;
-        font-size: 16px;
-    } */
-
     .coupon-btn-overlay.show {
         top: 160px;
         width: 200px;
         height: 133px;
-        padding: 40px 10px;
-        font-size: 26px;
+        background-image: url(images/img_overlay375.jpg);
     }
 
 
@@ -422,12 +381,6 @@ footer p {
         height: 130px;
     }
 
-    /* .coupon-btn::before {
-        top: 160px;
-        padding: 18px 85px;
-        font-size: 12px;
-    } */
-
     .coupon-btn-overlay.show {
         top: 159px;
         width: 200px;
@@ -439,10 +392,6 @@ footer p {
 @media(max-width: 266px) {
 
     /* coupon */
-
-    /* .coupon-btn::before {
-        top: 183px;
-    } */
 
     .coupon-btn-overlay.show {
         top: 181px;
